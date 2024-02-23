@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main2.css">
+    <title>Resultados de la búsqueda</title>
+</head>
+<body>
+    <h2>Resultados de la búsqueda</h2>
+    <div id="resultados">
+        <!-- Aquí se mostrarán los resultados de la búsqueda -->
+    </div>
+
+    <script>
+        // Obtener la palabra clave de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const palabra = urlParams.get('palabra');
+
+        // Realizar una solicitud AJAX para obtener los resultados de la búsqueda
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("resultados").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "mostrar.php?palabra=" + palabra, true);
+        xhttp.send();
+    </script>
+</body>
+</html>

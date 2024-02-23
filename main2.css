@@ -1,0 +1,62 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/750/000/large_2x/dark-red-gradient-blur-texture-vector.jpg");
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 200;
+  }
+  
+  /* Overlay para cambiar la opacidad */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* Color de fondo con opacidad */
+    z-index: -1; /* Coloca el overlay detrás del contenido */
+  }
+  
+  h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  form {
+    background-color:rgb(241, 241, 241);
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 600px; /* Ajusta el ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color:"";
+    color: rgb(255, 255, 255);
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: rgb(255, 54, 54);
+    cursor: pointer;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border: 2px solid rgb(255, 0, 0);
+  }
+  

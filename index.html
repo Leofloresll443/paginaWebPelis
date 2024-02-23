@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Registro de Películas</title>
+</head>
+<body>
+  <h2>Registro de Películas</h2>
+  <form action="guardar_pelicula.php" method="POST">
+    <label for="nombre">Nombre de la Película:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Megalodón"><br><br>
+    
+    <label for="genero">Género:</label><br>
+    <input type="text" id="genero" name="genero" placeholder="Pj. Ciencia ficción"><br><br>
+    
+    <label for="año">Año de estreno:</label><br>
+    <input type="number" id="año" name="año" placeholder="Pj. 2017"><br><br>
+    
+    <label for="director">Director:</label><br>
+    <input type="text" id="director" name="director" placeholder="David Fieltenson"><br><br>
+    
+    <label for="plataforma">Plataforma:</label><br>
+    <input type="text" id="plataforma" name="plataforma" placeholder="Pj. HBO"><br><br>
+    
+    <input type="submit" value="Registrar Película">
+  </form>
+  <form action="buscador.html">
+     <input type="submit" value="Ir al Buscador">
+  </form>
+  
+</body>
+</html>
